@@ -1,0 +1,476 @@
+
+body {
+  margin: 0;
+  padding: 0;
+
+  
+  background-image: url('images/back.svg');
+  background-size: 900px 250px;
+  display: block;
+  width: 900px;
+  height: 400px;
+  background-repeat: no-repeat;
+  
+}
+
+.content {
+  display: flex;
+  /* Define styles for your content */
+  align-items: center;
+  justify-content: center;
+
+}
+
+.content .Stocksearch{
+  font-size: 30px;
+}
+
+
+
+.searchbox{
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  
+}
+.Stocksearch:hover {
+  cursor: none;
+}
+
+
+
+
+.search-form {
+  border-top-left-radius: 15px; /* Adding curve to the search input */
+  border-bottom-left-radius: 15px; /* Adding curve to the search input */
+  border-top-right-radius: 15px; /* Adding curve to the buttons */
+  border-bottom-right-radius: 15px; /* Adding curve to the buttons */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+ 
+  
+   /* Adjust spacing as needed */
+}
+
+.search-form input[type="text"] {
+  height: 30px;
+  
+ 
+  width: 500px;
+  border: none;
+  outline: none;
+}
+/* Hide mouse cursor when hovering over the text input */
+.search-form input[type="text"]:hover {
+  cursor: none;
+}
+.search-form button {
+ 
+  height: 30px;
+  
+  background-position: bottom;
+ 
+
+  background-color: white;
+  
+
+  width: 25px;
+  cursor: pointer;
+ 
+  outline: none;
+
+}
+/* Change background image on hover for the search button */
+.search-button:hover {
+  background-image: url('./images/search-solid1.svg');
+}
+
+/* Change background image on hover for the clear button */
+.clear-button:hover {
+  background-image: url('./images/times-solid1.svg');
+}
+
+
+.search-button {
+  padding-right: 35px;
+  width: 25px;
+  border: none;
+  background: url('./images/search-solid.svg') no-repeat;
+  background-size: 15px 30px; /* Setting background size */
+  background-color: white;
+  border-top-left-radius: 15px; /* Adding curve to the search input */
+  border-bottom-left-radius: 15px; /* Adding curve to the search input */
+}
+
+
+.clear-button {
+  padding-left: 35px;
+  width: 25px;
+  background: url('./images/times-solid.svg') no-repeat;
+  background-size: 10px 30px; /* Setting background size */
+  background-color: white;
+  border-color:#ddd ;
+  border-radius: 0px;
+  border: none;
+  border-top-right-radius: 15px; /* Adding curve to the buttons */
+  border-bottom-right-radius: 15px; /* Adding curve to the buttons */
+}
+/* Add hover styles for search button */
+/* Apply hover styles to the SVG paths when hovering over the SVG element */
+svg:hover path {
+  fill: #000; /* Change fill color to black */
+}
+
+
+.result {
+  width: 500px;
+  margin-left: 200px;
+  margin-right: 200px;
+  align-items: center;
+  text-align: center; /* Center text within the container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+.result table {
+  width: 100%; /* Set table width to 100% */
+  border-collapse: collapse;
+}
+
+.result td {
+  padding: 8px; /* Adjust padding as needed */
+  font-size: 14px; /* Set the desired font size */
+  border-bottom: 1px solid #ddd; /* Add border to table cells */
+}
+
+/* Target the first child of each row */
+.result td:first-child {
+  text-align: right; /* Align text to the right for the first child */
+  width: 50%; /* Set width to 50% for equal spacing */
+}
+
+/* Target the second child of each row */
+.result td:last-child {
+  text-align: left; /* Align text to the left for the second child */
+  width: 50%; /* Set width to 50% for equal spacing */
+}
+
+
+
+.result img {
+  width: 100px;
+  height: 100px;
+}
+
+.result p {
+  border-bottom: 1px solid #ddd; /* Add black bottom border to <p> elements */
+  padding-bottom: 4px; /* Add spacing between paragraphs */
+  margin-bottom: 4px; /* Add margin below paragraphs for spacing */
+  
+}
+
+.ul{
+  height: 60px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.recommendation_trend{
+  text-decoration:solid;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin-top: -10px;
+
+ 
+  /* width: 60px; */
+}
+
+.recommendation_trend li{
+  float: left;
+  
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.one{
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  color: #ffffff;
+}
+
+.two{
+  width: 30px;
+  height: 30px;
+  background-color: brown;
+  color: #ffffff;
+}
+
+.three{
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  color: #ffffff;
+}
+
+.four{
+  width: 30px;
+  height: 30px;
+  background-color: lightgreen;
+  color: #ffffff;
+}
+
+.five{
+  width: 30px;
+  height: 30px;
+  background-color: limegreen;
+  color: #ffffff;
+}
+
+.high{
+  height: 40px;
+  width: 40px;
+  color: red;
+  
+ 
+ 
+
+  font-size: 13px;
+}
+
+.low{
+  width: 40px;
+  height: 40px;
+  color: green;
+ 
+  font-size: 13px;
+}
+
+.trend_text{
+  margin-top: 35px;
+color: #000;
+
+}
+
+
+.stocksummary {
+  width: 300px;
+  margin-left: 300px;
+  margin-right: 300px;
+  align-items: right;
+  text-align: center; /* Center text within the container */
+  margin: 0 auto; /* Center the container horizontally */
+  border-collapse: collapse;
+}
+
+.stocksummary td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+  
+}
+
+.stocksummary td:first-child {
+  text-align: right;
+  font-weight: bold;
+  white-space: nowrap;
+  vertical-align: top;
+  width: 40%; /* Adjust width as needed */
+}
+.stocksummary td:nth-child(2) {
+  text-align: left; /* Align text in the second child td to left */
+}
+.stocksummary img {
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+
+.stocksummary p {
+  align-items: right;
+ 
+  border-top: 1px solid lightslategray;;
+ /* Add black bottom border to <p> elements */
+   /* Add spacing between paragraphs */
+   padding-top: 5px;
+  margin-bottom: 4px; /* Add margin below paragraphs for spacing */
+  
+}
+.stocksummary p strong {
+  font-weight: bold;
+}
+.recommendation-trends {
+  display: inline-block; /* Ensure the trends are displayed inline */
+  vertical-align: top; /* Align the trends to the top of the container */
+}
+.stocksummary img{
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.stocksummary p t{
+  max-width: 200px;
+  height: 50px;
+}
+
+.stocksummary p a {
+  color: red;
+  max-width: 40px;
+  font-size: 15px;
+  height: 50px;
+  margin: 5px;
+}
+.stocksummary p b {
+  background-color: red;
+  
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+}
+.stocksummary p c{
+  background-color: brown;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+}
+.stocksummary p d {
+  background-color: lightgreen;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+}
+.stocksummary p e {
+  background-color: green;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+}
+.stocksummary f {
+  background-color: greenyellow;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+}
+.stocksummary p g{
+  color: greenyellow;
+  max-width: 40px;
+  font-size: 15px;
+  height: 50px;
+  margin: 5px;
+}
+
+.listofdata {
+  display: flex;
+
+}
+
+.listofdata p {
+  width: 50px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+
+/* CSS */
+.article {
+  margin: 10px;
+  padding: 15px;
+  display: flex;
+  margin-bottom: 20px; /* Add some spacing between articles */
+  background-color: #f6f4f4;
+}
+
+.article-image {
+  flex-shrink: 0; /* Prevent image from shrinking */
+  width: 100px; /* Set width of the image */
+  height: 100px; /* Maintain aspect ratio */
+  margin-right: 20px; /* Add some spacing between image and content */
+}
+
+.article-content {
+  flex-grow: 1; /* Allow content to grow and fill remaining space */
+}
+
+.article-content h3{
+  margin: 0;
+
+}
+.article-content p{
+  margin: 0;
+}
+
+
+#container {
+  height: 550px;
+  min-width: 310px;
+}
+
+#container a{
+  color: blue;
+}
+
+.buttonsContainer {
+  width: 900;
+  display: none;
+  background-color: #f6f4f4;
+  border-radius: 0px;
+  margin-top: 130px;
+  align-items: center;
+  justify-content: flex-start;
+
+
+
+}
+
+.buttonsContainer button {
+  border: none;
+  outline: none;
+  height: 60px;
+  width: auto;
+  
+}
+
+.buttonsContainer button:hover {
+  background-color: #e8e8e8;
+  color: #000000; /* Please note that there's a Unicode character issue here, which I've corrected */
+}
+.error-message {
+  margin-top: 400px;
+  
+  font-family: sans-serif;
+  font-size: 16px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  margin-top: 200px;
+  margin-left: 180px;
+  padding: 10px;
+
+  border-radius: 10px;
+  width: 50%;
+}
+.polylink {
+  
+  
+  text-decoration: underline; /* Add underline */
+}
+
+.polylink:visited {
+  color: purple; /* Change color to purple when visited */
+}
+

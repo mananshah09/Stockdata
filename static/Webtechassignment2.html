@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSCI 571</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+  <!-- Your HTML content goes here -->
+  <div class="content">
+    <p class="Stocksearch">Stock Search</p>
+  </div>
+  <div class="searchbox">
+    <form class="search-form">
+        <button type="submit" class="search-button" ></button>
+        <input type="text" id="searchInput" class="searchInput" name="search" placeholder="Enter Stock Ticker Symbol" required>
+        <button type="reset" class="clear-button"></button>
+    </form>
+  </div>
+  <div id="alertMessage" style="color: red;"></div>
+  
+  <div id="buttonsContainer" class="buttonsContainer"></div> <!-- Container for buttons -->
+  <div class="error-message">
+    Error: No record has been found, please enter a valid symbol.
+  </div>
+  <div id="result" class="result"></div> <!-- Element to display the returned data -->
+  <div id="stocksummary" class="stocksummary">
+    <div id="trends" class="trends"></div>
+  </div>
+
+  <div id="newsinfo" class="newsinfo"></div>
+  <script src="https://code.highcharts.com/stock/highstock.js"></script>
+  <script src="https://code.highcharts.com/stock/modules/drag-panes.js"></script>
+  <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/stock/modules/accessibility.js"></script>
+
+
+  <div id="container"></div>
+
+  <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
